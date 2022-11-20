@@ -1,5 +1,3 @@
-
-
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -36,8 +34,10 @@ address {
   font-style: normal;
 }
 
+.web-accent {
+  color: #2196f3;
+}
 /* кнопка */
-.web-accent{
-  color: #2196F3;
-  }
-  
+button {
+  cursor: pointer;
+}

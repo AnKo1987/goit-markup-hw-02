@@ -1,15 +1,70 @@
+/* обнуление */
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+
+.link,
+logo-type {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
+}
+
+.web-accent {
+  color: #2196f3;
+}
+/* кнопка */
+button {
+  cursor: pointer;
+}
+
 :root {
   --color-accent: #2196f3;
   --color-primar: #212121;
   --color-other: #757575;
   --color-white: #ffffff;
-  --color-footer:#2F303A;
+  --color-footer: #2f303a;
 }
+
 main {
   --color-primar: #212121;
 }
+
 .logo-type {
   color: var(--color-primar);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19px;
+  letter-spacing: 0.03em;
 }
 
 .web-accent {
@@ -17,41 +72,40 @@ main {
 }
 
 .link {
+  color: var(--color-primar);
+
+  font-family: 'Roboto';
+}
+
+.header-list {
   color: var(--color-other);
 }
-.list {
-  color: var(--color-primar);
+
+.header {
+  background: #ffffff;
+}
+
+.geroy {
+  color: var(--color-white);
+  background: #2f303a;
+}
+.hero-button {
+  background: #2196f3;
+  color: var(--color-white);
 }
 p {
   color: var(--color-other);
 }
-/* кнопка */
-.hero-button {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  cursor: pointer;
-}
-
-.hero{
-  background: #2F303A;
-}
-h1{
-  color: var(--color-white);
-}
-
-/* footer */
-
+/* ФОТЕР */
 .location {
   color: var(--color-white);
 }
-.basement {
-  background: #2F303A;
+.address {
+  background: #2f303a;
 }
-  
-
-.mail-nav {
+.mail {
   color: rgba(255, 255, 255, 0.6);
 }
-.tel-nav {
+.tel {
   color: rgba(255, 255, 255, 0.6);
 }

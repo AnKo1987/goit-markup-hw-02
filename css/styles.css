@@ -1,5 +1,3 @@
-/* обнуление */
-
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -19,8 +17,7 @@ p {
 }
 /* Класс для обнуления базовых свойств у ссылок */
 
-.link,
-logo-type {
+.link {
   text-decoration: none;
   color: inherit;
 }
@@ -38,7 +35,7 @@ address {
 }
 
 .web-accent {
-  color: #2196f3;
+  color: var(--color-accent);
 }
 /* кнопка */
 button {
@@ -53,18 +50,30 @@ button {
   --color-footer: #2f303a;
 }
 
-main {
+body {
+  font-family: "Roboto";
   --color-primar: #212121;
 }
 
 .logo-type {
   color: var(--color-primar);
   font-family: "Raleway";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.header {
+  background: var(--color-white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.header-list {
+  color: var(--color-other);
 }
 
 .web-accent {
@@ -72,40 +81,83 @@ main {
 }
 
 .link {
-  color: var(--color-primar);
-
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
-.header-list {
+/* состояние ссылок header */
+.list .link {
+  color: var(--color-primar);
+}
+
+.list .link:hover,
+.list .link:focus {
+  color: var(--color-accent);
+}
+
+/* состояние контактов header */
+
+.list .header-list {
   color: var(--color-other);
 }
 
-.header {
-  background: #ffffff;
+.header-list:hover,
+.header-list:focus {
+  color: var(--color-accent);
 }
 
 .geroy {
   color: var(--color-white);
-  background: #2f303a;
+  background: var(--color-footer);
 }
+
 .hero-button {
-  background: #2196f3;
+  background: var(--color-accent);
   color: var(--color-white);
+ 
 }
+portfolio-button{
+  color: var(--color-primar);
+  /* закончил на кнопках портфолио */
+}
+
 p {
   color: var(--color-other);
 }
+
 /* ФОТЕР */
 .location {
   color: var(--color-white);
 }
+
 .address {
-  background: #2f303a;
+  background: var(--color-footer);
 }
+/* состояние навигации foter */
+.list .address-location {
+  color: var(--color-white);
+}
+
+.list .location:hover,
+.list .location:focus {
+  color: var(--color-accent);
+}
+
 .mail {
   color: rgba(255, 255, 255, 0.6);
 }
+/* состояние E-mail foter */
+
+.list .mail:hover,
+.list .mail:focus {
+  color: var(--color-accent);
+}
+
 .tel {
   color: rgba(255, 255, 255, 0.6);
+}
+/* состояние tel foter */
+
+.list .tel:hover,
+.list .tel:focus {
+  color: var(--color-accent);
 }
